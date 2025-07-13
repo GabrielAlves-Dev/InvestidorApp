@@ -19,7 +19,6 @@ class MyFirebaseMessagingService : FirebaseMessagingService() {
 
     override fun onMessageReceived(remoteMessage: RemoteMessage) {
         super.onMessageReceived(remoteMessage)
-
         remoteMessage.notification?.let {
             showNotification(it.title, it.body)
         }
@@ -27,7 +26,6 @@ class MyFirebaseMessagingService : FirebaseMessagingService() {
 
     override fun onNewToken(token: String) {
         super.onNewToken(token)
-        // Se necessário, envie o token para o seu backend
         println("Token do dispositivo: $token")
     }
 

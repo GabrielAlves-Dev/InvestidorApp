@@ -5,10 +5,10 @@ plugins {
     id("org.jetbrains.compose")
 }
 android {
-    namespace = "com.gabriel.investidorapp" // Corrigido
+    namespace = "com.gabriel.investidorapp"
     compileSdk = 35
     defaultConfig {
-        applicationId = "com.gabriel.investidorapp" // Corrigido
+        applicationId = "com.gabriel.investidorapp"
         minSdk = 26
         targetSdk = 35
         versionCode = 1
@@ -58,12 +58,10 @@ dependencies {
     implementation(libs.androidx.ui.tooling.preview)
     debugImplementation(libs.androidx.ui.tooling)
 
-    implementation("androidx.navigation:navigation-compose:2.7.7") // Versão atualizada
+    implementation("androidx.navigation:navigation-compose:2.7.7")
     implementation("org.jetbrains.kotlinx:kotlinx-coroutines-android:1.7.3")
-
-    implementation("androidx.lifecycle:lifecycle-runtime-compose:2.8.0") // Versão atualizada
-    implementation("androidx.lifecycle:lifecycle-viewmodel-compose:2.8.0") // Versão atualizada
-
+    implementation("androidx.lifecycle:lifecycle-runtime-compose:2.8.0")
+    implementation("androidx.lifecycle:lifecycle-viewmodel-compose:2.8.0")
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.activity.compose)
 }

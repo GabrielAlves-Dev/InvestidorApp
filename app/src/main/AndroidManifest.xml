@@ -4,11 +4,11 @@
     <uses-permission android:name="android.permission.INTERNET"/> [cite: 224]
     <uses-permission android:name="android.permission.POST_NOTIFICATIONS"/> [cite: 225]
     <service
-    [cite_start]android:name="br.ufc.quixada.investioraula.services.FirebaseMessagingService" [cite: 234]
-    [cite_start]android:exported="true"> [cite: 236]
-    <intent-filter>
-        <action android:name="com.google.firebase.MESSAGING_EVENT"/> [cite: 238]
-    </intent-filter>
+        android:name=".service.MyFirebaseMessagingService"
+        android:exported="false">
+        <intent-filter>
+            <action android:name="com.google.firebase.MESSAGING_EVENT"/>
+        </intent-filter>
     </service>
     <application
         android:allowBackup="true"
